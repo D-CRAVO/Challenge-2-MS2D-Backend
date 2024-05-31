@@ -43,6 +43,10 @@ public class LearnerService {
         learnerRepository.save(learnerMapper.update(learnerDTO));
     }
 
+    public void addLearners(List<LearnerDTO> learnerDTOs){
+        learnerRepository.saveAll(learnerMapper.update(learnerDTOs));
+    }
+
     /**
      * Supprime un apprenant d'après son identifiant
      * @param id Identifiant de l'apprenant
