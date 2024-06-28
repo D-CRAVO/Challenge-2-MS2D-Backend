@@ -32,12 +32,12 @@ public class LearnerController {
         return learnerService.getAllLearners();
     }
     
-    // @RequestMapping(value = "/learners", method = RequestMethod.POST)
-    // public void addLearner(@RequestBody LearnerDTO learnerDTO){
-    //     learnerService.addLearner(learnerDTO);
-    // }
-
     @RequestMapping(value = "/learners", method = RequestMethod.POST)
+    public void addLearner(@RequestBody LearnerDTO learnerDTO){
+        learnerService.addLearner(learnerDTO);
+    }
+
+    @RequestMapping(value = "/add-learners", method = RequestMethod.POST)
     public void addLearners(@RequestBody List<LearnerDTO> learnerDTOs){
         learnerService.addLearners(learnerDTOs);
     }
