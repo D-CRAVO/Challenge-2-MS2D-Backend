@@ -11,6 +11,7 @@
 	<groupId>fr.davidcravo</groupId>
 	<artifactId>challenge_2_MS2D</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>challenge_2_MS2D</name>
 	<description>Application pour admission MS2D</description>
 	<properties>
