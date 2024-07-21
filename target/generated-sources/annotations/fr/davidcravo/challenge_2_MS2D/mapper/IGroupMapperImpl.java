@@ -10,8 +10,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-07-21T14:40:29+0200",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.11 (Oracle Corporation)"
+    date = "2024-07-21T15:02:04+0200",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.39.0.v20240620-1855, environment: Java 17.0.11 (Eclipse Adoptium)"
 )
 public class IGroupMapperImpl implements IGroupMapper {
 
@@ -38,12 +38,12 @@ public class IGroupMapperImpl implements IGroupMapper {
         }
 
         Long id = null;
-        String name = null;
         List<LearnerDTO> learners = null;
+        String name = null;
 
         id = group.getId();
-        name = group.getName();
         learners = learnerListToLearnerDTOList( group.getLearners() );
+        name = group.getName();
 
         GroupDTO groupDTO = new GroupDTO( id, name, learners );
 
@@ -59,8 +59,8 @@ public class IGroupMapperImpl implements IGroupMapper {
         Group group = learner.getGroup();
 
         group.setId( groupDTO.getId() );
-        group.setName( groupDTO.getName() );
         group.setLearners( learnerDTOListToLearnerList( groupDTO.getLearners() ) );
+        group.setName( groupDTO.getName() );
 
         return group;
     }
@@ -70,12 +70,12 @@ public class IGroupMapperImpl implements IGroupMapper {
             return null;
         }
 
-        Long id = null;
         String firstname = null;
+        Long id = null;
         String lastname = null;
 
-        id = learner.getId();
         firstname = learner.getFirstname();
+        id = learner.getId();
         lastname = learner.getLastname();
 
         LearnerDTO learnerDTO = new LearnerDTO( id, firstname, lastname );
@@ -103,8 +103,8 @@ public class IGroupMapperImpl implements IGroupMapper {
 
         Learner learner = new Learner();
 
-        learner.setId( learnerDTO.getId() );
         learner.setFirstname( learnerDTO.getFirstname() );
+        learner.setId( learnerDTO.getId() );
         learner.setLastname( learnerDTO.getLastname() );
 
         return learner;
