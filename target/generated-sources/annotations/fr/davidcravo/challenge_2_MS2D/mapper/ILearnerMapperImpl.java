@@ -8,8 +8,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-07-21T12:22:28+0200",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.39.0.v20240620-1855, environment: Java 17.0.11 (Eclipse Adoptium)"
+    date = "2024-07-21T14:19:08+0200",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.11 (Oracle Corporation)"
 )
 public class ILearnerMapperImpl implements ILearnerMapper {
 
@@ -19,12 +19,12 @@ public class ILearnerMapperImpl implements ILearnerMapper {
             return null;
         }
 
-        String firstname = null;
         Long id = null;
+        String firstname = null;
         String lastname = null;
 
-        firstname = learner.getFirstname();
         id = learner.getId();
+        firstname = learner.getFirstname();
         lastname = learner.getLastname();
 
         LearnerDTO learnerDTO = new LearnerDTO( id, firstname, lastname );
@@ -54,8 +54,8 @@ public class ILearnerMapperImpl implements ILearnerMapper {
 
         Learner learner = new Learner();
 
-        learner.setFirstname( learnerDTO.getFirstname() );
         learner.setId( learnerDTO.getId() );
+        learner.setFirstname( learnerDTO.getFirstname() );
         learner.setLastname( learnerDTO.getLastname() );
 
         return learner;

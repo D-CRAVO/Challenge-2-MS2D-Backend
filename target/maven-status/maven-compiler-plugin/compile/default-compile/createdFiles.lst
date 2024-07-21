@@ -1,0 +1,16 @@
+fr\davidcravo\challenge_2_MS2D\service\LearnerService.class
+fr\davidcravo\challenge_2_MS2D\mapper\ILearnerMapperImpl.class
+fr\davidcravo\challenge_2_MS2D\repository\ILearnerRepository.class
+fr\davidcravo\challenge_2_MS2D\Challenge2Ms2DApplication.class
+fr\davidcravo\challenge_2_MS2D\service\GroupService.class
+fr\davidcravo\challenge_2_MS2D\model\Learner.class
+fr\davidcravo\challenge_2_MS2D\mapper\ILearnerMapper.class
+fr\davidcravo\challenge_2_MS2D\model\Group.class
+fr\davidcravo\challenge_2_MS2D\mapper\IGroupMapper.class
+fr\davidcravo\challenge_2_MS2D\repository\IGroupRepository.class
+fr\davidcravo\challenge_2_MS2D\common\ListUtils.class
+fr\davidcravo\challenge_2_MS2D\DTO\GroupDTO.class
+fr\davidcravo\challenge_2_MS2D\controller\LearnerController.class
+fr\davidcravo\challenge_2_MS2D\controller\GroupController.class
+fr\davidcravo\challenge_2_MS2D\DTO\LearnerDTO.class
+fr\davidcravo\challenge_2_MS2D\mapper\IGroupMapperImpl.class
