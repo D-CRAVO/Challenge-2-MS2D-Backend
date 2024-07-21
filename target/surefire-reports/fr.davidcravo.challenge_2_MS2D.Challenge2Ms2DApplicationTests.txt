@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: fr.davidcravo.challenge_2_MS2D.Challenge2Ms2DApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.67 s -- in fr.davidcravo.challenge_2_MS2D.Challenge2Ms2DApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.69 s -- in fr.davidcravo.challenge_2_MS2D.Challenge2Ms2DApplicationTests
